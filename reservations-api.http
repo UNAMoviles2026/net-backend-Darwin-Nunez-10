@@ -1,3 +1,14 @@
 @reservations_api_HostAddress = http://localhost:5147
+@reservationId = 00000000-0000-0000-0000-000000000000
 
-###
+### Create reservation
+POST {{reservations_api_HostAddress}}/api/reservations
+Content-Type: application/json
+
+{
+  "classroomId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "date": "2026-04-08",
+  "startTime": "08:00:00",
+  "endTime": "09:00:00"
+}
+
