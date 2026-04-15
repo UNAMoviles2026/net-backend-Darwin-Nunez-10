@@ -7,4 +7,6 @@ public interface IReservationService
 {
   Task<ReservationResponse> CreateAsync(CreateReservationRequest request);
   Task<bool> DeleteAsync(Guid Id);
+
+  Task<List<ReservationResponse>> GetByDateAsync(DateOnly date);
 }
